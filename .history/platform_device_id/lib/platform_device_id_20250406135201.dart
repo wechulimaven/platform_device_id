@@ -18,7 +18,7 @@ class PlatformDeviceId {
         deviceId = await PlatformDeviceIdPlatform.instance.getDeviceId();
       } else if (Platform.isAndroid) {
         AndroidDeviceInfo androidInfo = await deviceInfoPlugin.androidInfo;
-        deviceId = androidInfo.id;
+        deviceId = androidInfo.;
       } else if (Platform.isIOS) {
         IosDeviceInfo iosInfo = await deviceInfoPlugin.iosInfo;
         deviceId = iosInfo.identifierForVendor;
